@@ -14,12 +14,14 @@ import { createApp } from 'vue';
  */
 
 import vuetify from "./plugins/vuetify"
+import vuex from "./plugins/vuex"
 
-
-window.app = createApp({
-
-});
+window.app = createApp({});
 app.use(vuetify)
+app.use(vuex)
+
+import AdminMenu from './layouts/admin_menu.vue'
+app.component('admin-menu', AdminMenu)
 
 import Dashboard from './pages/dashboard.vue';
 app.component('dashboard', Dashboard);

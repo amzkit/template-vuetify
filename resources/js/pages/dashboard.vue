@@ -1,5 +1,5 @@
 <template>
-    <div class="w-100">
+    <div class="container">
         <v-row justify="center">
             <v-col>
                 <v-card>
